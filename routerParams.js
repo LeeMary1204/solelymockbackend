@@ -26,6 +26,7 @@ app.get('/search/:name', (request, response) => {
     if (!resData) {
         response.send('404')
     }
+    console.log(resData);
     response.send({
         code: '200',
         msg: 'search successfully',
