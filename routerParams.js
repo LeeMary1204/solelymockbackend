@@ -19,6 +19,7 @@ app.get('/lists', (request, response) => {
 })
 
 app.get('/search/:name', (request, response) => {
+    console.log(request.params.name)
     let resData = obj.filter(v => {
         return v.name.toLowerCase() === request.params.name.toLowerCase()
     })
